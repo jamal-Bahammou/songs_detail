@@ -17,6 +17,11 @@ const SongDetail = ({ song }) => {
 };
 
 const mapStateToProps = state => {
+	console.log('SongDetail:', state);
+	// {
+	// 	selectedSong: null,
+	// 	songs: (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, ...]
+	// }
 	return { song: state.selectedSong };
 };
 

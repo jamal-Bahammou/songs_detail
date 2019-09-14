@@ -10,7 +10,7 @@ class SongList extends Component {
 				<div className='item' key={song.title}>
 					<div className='right floated content'>
 						<button
-							onClick={() => this.props.selectSong(song)}
+							onClick={() => this.props.selectSong(song)} //💣💥 ADD THE ACTION TO THE BUTTON 💣💥
 							className='ui button primary'
 						>
 							SELECT
@@ -28,7 +28,12 @@ class SongList extends Component {
 }
 
 const mapStateToProps = state => {
-	return { songs: state.songs };
+	console.log('SongList:', state);
+	// {
+	// 	selectedSong: null,
+	// 	songs: (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, ...]
+	// }
+	return { songs: state.songs }; //💣💥 ADD THE LIST OF SONG TO THE STATE 💣💥
 };
 
 export default connect(

@@ -1,6 +1,8 @@
+// 💣💥 THE ACTION IS WENT A USER SELECT SONG 💣💥
 // ACTION CREATOR
 export const selectSong = song => {
 	// RETURN AN ACTION
+	// ADD THE LIST OF SONG TO THE STATE
 	return {
 		type: 'SONG_SELECTED',
 		payload: song
