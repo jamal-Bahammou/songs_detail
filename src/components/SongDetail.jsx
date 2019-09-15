@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+// This is the first commit:
+
 const SongDetail = ({ song }) => {
 	if (!song) return <div>SELECT A SONG</div>;
 
